@@ -29,6 +29,7 @@
         android:backgroundTint="@color/black"
         android:inputType="number"
         android:minHeight="48dp"
+        android:maxLength="15"
         android:hint="@string/ip"
         android:textColorHint="@color/grey" />
 
@@ -41,6 +42,7 @@
         android:backgroundTint="@color/black"
         android:inputType="number"
         android:minHeight="48dp"
+        android:maxLength="6"
         android:hint="@string/port"
         android:textColorHint="@color/grey" />
 
@@ -53,6 +55,7 @@
         android:backgroundTint="@color/black"
         android:inputType="textPersonName"
         android:minHeight="48dp"
+        android:maxLength="30"
         android:hint="@string/name_gprs"
         android:textColorHint="@color/grey" />
 
@@ -65,6 +68,7 @@
         android:backgroundTint="@color/black"
         android:inputType="textPersonName"
         android:minHeight="48dp"
+        android:maxLength="30"
         android:hint="@string/pass_gprs"
         android:textColorHint="@color/grey" />
 
@@ -77,6 +81,7 @@
         android:backgroundTint="@color/black"
         android:inputType="textPersonName"
         android:minHeight="48dp"
+        android:maxLength="30"
         android:hint="@string/apn_gprs"
         android:textColorHint="@color/grey" />
 
@@ -89,6 +94,7 @@
         android:backgroundTint="@color/black"
         android:inputType="number"
         android:minHeight="48dp"
+        android:maxLength="1"
         android:hint="@string/mode_gsm"
         android:textColorHint="@color/grey" />
 
@@ -101,6 +107,7 @@
         android:backgroundTint="@color/black"
         android:inputType="number"
         android:minHeight="48dp"
+        android:maxLength="1"
         android:hint="@string/mode"
         android:textColorHint="@color/grey" />
 
@@ -113,6 +120,7 @@
         android:backgroundTint="@color/black"
         android:inputType="number"
         android:minHeight="48dp"
+        android:maxLength="15"
         android:hint="@string/res_ip"
         android:textColorHint="@color/grey" />
 
@@ -125,6 +133,7 @@
         android:backgroundTint="@color/black"
         android:inputType="number"
         android:minHeight="48dp"
+        android:maxLength="6"
         android:hint="@string/res_port"
         android:textColorHint="@color/grey" />
 
@@ -137,6 +146,7 @@
         android:backgroundTint="@color/black"
         android:inputType="number"
         android:minHeight="48dp"
+        android:maxLength="11"
         android:hint="@string/phone"
         android:textColorHint="@color/grey" />
 
