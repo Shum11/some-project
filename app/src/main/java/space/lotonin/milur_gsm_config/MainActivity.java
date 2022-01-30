@@ -1,6 +1,8 @@
 package space.lotonin.milur_gsm_config;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
@@ -10,11 +12,15 @@ import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.telephony.SmsManager;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import com.google.android.material.appbar.MaterialToolbar;
 
 public class MainActivity extends AppCompatActivity {
     final int SEND_SMS_PERMISSION_REQUEST_CODE = 111;
@@ -34,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
     private String p;
     private SmsManager smsManager;
     SharedPreferences sPref;
+    Toolbar toolbar;
     final String SAVED_TEXT = "saved_text";
     final String SAVED_TEXT0 = "saved_text0";
     final String SAVED_TEXT1 = "saved_text1";
@@ -132,6 +139,8 @@ public class MainActivity extends AppCompatActivity {
         }
     }
     private void init () {
+        toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
         pass = findViewById(R.id.pass);
         ip = findViewById(R.id.ip);
         port = findViewById(R.id.port);
@@ -208,5 +217,29 @@ public class MainActivity extends AppCompatActivity {
     protected void onPause() {
         super.onPause();
         saveText();
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.toolbar_menu, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if(item.getItemId() == R.id.clear){
+            pass.setText("");
+            ip.setText("");
+            port.setText("");
+            name_gprs.setText("");
+            pass_gprs.setText("");
+            apn_gprs.setText("");
+            mode_gsm.setText("");
+            mode.setText("");
+            res_ip.setText("");
+            res_port.setText("");
+            phone_number.setText("");
+        }
+        return super.onOptionsItemSelected(item);
     }
 }

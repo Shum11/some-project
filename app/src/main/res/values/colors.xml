@@ -9,4 +9,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="grey">#2B2929</color>
     <color name="green">#78D50E</color>
+    <color name="orange_toolbar">#D5660A</color>
 </resources>

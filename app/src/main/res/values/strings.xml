@@ -12,4 +12,5 @@
     <string name="res_port">Резервный IP-порт TCP-сервера</string>
     <string name="phone">Номер телефона</string>
     <string name="send">отправить</string>
+    <string name="clear">Очистить поля</string>
 </resources>
