@@ -1,15 +1,15 @@
 <resources>
     <string name="app_name">Milur_GSM_Config</string>
-    <string name="pass">Введите пароль</string>
-    <string name="ip">Введите IP адрес TCP-сервера</string>
-    <string name="port">Введите IP порт TCP-сервера</string>
-    <string name="name_gprs">Введите Имя пользователя GPRS</string>
-    <string name="pass_gprs">Введите Пароль GPRS</string>
-    <string name="apn_gprs">Введите Точку доступа APN GPRS</string>
-    <string name="mode">Введите Режим устройства Клиент/Сервер</string>
-    <string name="mode_gsm">Введите Режим GSM</string>
-    <string name="res_ip">Введите Резервный IP-адрес TCP-сервера</string>
-    <string name="res_port">Введите Резервный IP-порт TCP-сервера</string>
-    <string name="phone">Введите номер телефона</string>
+    <string name="pass">Пароль</string>
+    <string name="ip">IP адрес TCP-сервера</string>
+    <string name="port">IP порт TCP-сервера</string>
+    <string name="name_gprs">Имя пользователя GPRS</string>
+    <string name="pass_gprs">Пароль GPRS</string>
+    <string name="apn_gprs">Точку доступа APN GPRS</string>
+    <string name="mode">Режим устройства Клиент/Сервер</string>
+    <string name="mode_gsm">Режим GSM</string>
+    <string name="res_ip">Резервный IP-адрес TCP-сервера</string>
+    <string name="res_port">Резервный IP-порт TCP-сервера</string>
+    <string name="phone">Номер телефона</string>
     <string name="send">отправить</string>
 </resources>

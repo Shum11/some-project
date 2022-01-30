@@ -68,10 +68,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(pass.getText().toString().trim().equals("")){
-                    Toast.makeText(MainActivity.this, R.string.pass, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "Введите Пароль", Toast.LENGTH_SHORT).show();
                 }
                 else if(ip.getText().toString().trim().equals("")){
-                    Toast.makeText(MainActivity.this, R.string.ip, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "Введите IP адресс", Toast.LENGTH_SHORT).show();
+                }
+                else if(phone_number.getText().toString().trim().equals("")){
+                    Toast.makeText(MainActivity.this, "Введите номер телефона", Toast.LENGTH_SHORT).show();
                 }
 
                 else {
@@ -102,6 +105,7 @@ public class MainActivity extends AppCompatActivity {
                     if(checkPermission(Manifest.permission.SEND_SMS)) {
                         smsManager = SmsManager.getDefault();
                         smsManager.sendTextMessage(phone, null, message, null, null);
+                        Toast.makeText(MainActivity.this, "Сообщение Отправлено", Toast.LENGTH_SHORT).show();
                     }
                     else {
                         Toast.makeText(MainActivity.this, "Разрешите отправку смс", Toast.LENGTH_SHORT).show();

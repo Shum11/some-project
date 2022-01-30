@@ -9,151 +9,163 @@
     tools:context=".MainActivity"
     >
 
-    <EditText
-        android:id="@+id/pass"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:padding="15dp"
-        android:backgroundTint="@color/black"
-        android:inputType="textPersonName"
-        android:hint="@string/pass"
-        android:textColorHint="@color/grey"/>
 
-    <EditText
-        android:id="@+id/ip"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:padding="15dp"
-        android:backgroundTint="@color/black"
-        android:inputType="number"
-        android:minHeight="48dp"
-        android:maxLength="15"
-        android:hint="@string/ip"
-        android:textColorHint="@color/grey" />
+        android:layout_height="match_parent">
 
-    <EditText
-        android:id="@+id/port"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:padding="15dp"
-        android:backgroundTint="@color/black"
-        android:inputType="number"
-        android:minHeight="48dp"
-        android:maxLength="6"
-        android:hint="@string/port"
-        android:textColorHint="@color/grey" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
 
-    <EditText
-        android:id="@+id/name_gprs"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:padding="15dp"
-        android:backgroundTint="@color/black"
-        android:inputType="textPersonName"
-        android:minHeight="48dp"
-        android:maxLength="30"
-        android:hint="@string/name_gprs"
-        android:textColorHint="@color/grey" />
+            <EditText
+                android:id="@+id/pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:padding="15dp"
+                android:backgroundTint="@color/black"
+                android:inputType="textPersonName"
+                android:hint="@string/pass"
+                android:textColorHint="@color/grey"/>
 
-    <EditText
-        android:id="@+id/pass_gprs"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:padding="15dp"
-        android:backgroundTint="@color/black"
-        android:inputType="textPersonName"
-        android:minHeight="48dp"
-        android:maxLength="30"
-        android:hint="@string/pass_gprs"
-        android:textColorHint="@color/grey" />
+            <EditText
+                android:id="@+id/ip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:padding="15dp"
+                android:backgroundTint="@color/black"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:maxLength="15"
+                android:hint="@string/ip"
+                android:textColorHint="@color/grey" />
 
-    <EditText
-        android:id="@+id/apn_gprs"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:padding="15dp"
-        android:backgroundTint="@color/black"
-        android:inputType="textPersonName"
-        android:minHeight="48dp"
-        android:maxLength="30"
-        android:hint="@string/apn_gprs"
-        android:textColorHint="@color/grey" />
+            <EditText
+                android:id="@+id/port"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:padding="15dp"
+                android:backgroundTint="@color/black"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:maxLength="6"
+                android:hint="@string/port"
+                android:textColorHint="@color/grey" />
 
-    <EditText
-        android:id="@+id/mode_gsm"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:padding="15dp"
-        android:backgroundTint="@color/black"
-        android:inputType="number"
-        android:minHeight="48dp"
-        android:maxLength="1"
-        android:hint="@string/mode_gsm"
-        android:textColorHint="@color/grey" />
+            <EditText
+                android:id="@+id/name_gprs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:padding="15dp"
+                android:backgroundTint="@color/black"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:maxLength="30"
+                android:hint="@string/name_gprs"
+                android:textColorHint="@color/grey" />
 
-    <EditText
-        android:id="@+id/mode"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:padding="15dp"
-        android:backgroundTint="@color/black"
-        android:inputType="number"
-        android:minHeight="48dp"
-        android:maxLength="1"
-        android:hint="@string/mode"
-        android:textColorHint="@color/grey" />
+            <EditText
+                android:id="@+id/pass_gprs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:padding="15dp"
+                android:backgroundTint="@color/black"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:maxLength="30"
+                android:hint="@string/pass_gprs"
+                android:textColorHint="@color/grey" />
 
-    <EditText
-        android:id="@+id/res_ip"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:padding="15dp"
-        android:backgroundTint="@color/black"
-        android:inputType="number"
-        android:minHeight="48dp"
-        android:maxLength="15"
-        android:hint="@string/res_ip"
-        android:textColorHint="@color/grey" />
+            <EditText
+                android:id="@+id/apn_gprs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:padding="15dp"
+                android:backgroundTint="@color/black"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:maxLength="30"
+                android:hint="@string/apn_gprs"
+                android:textColorHint="@color/grey" />
 
-    <EditText
-        android:id="@+id/res_port"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:padding="15dp"
-        android:backgroundTint="@color/black"
-        android:inputType="number"
-        android:minHeight="48dp"
-        android:maxLength="6"
-        android:hint="@string/res_port"
-        android:textColorHint="@color/grey" />
+            <EditText
+                android:id="@+id/mode_gsm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:padding="15dp"
+                android:backgroundTint="@color/black"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:maxLength="1"
+                android:hint="@string/mode_gsm"
+                android:textColorHint="@color/grey" />
 
-    <EditText
-        android:id="@+id/phone_number"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:padding="15dp"
-        android:backgroundTint="@color/black"
-        android:inputType="number"
-        android:minHeight="48dp"
-        android:maxLength="11"
-        android:hint="@string/phone"
-        android:textColorHint="@color/grey" />
+            <EditText
+                android:id="@+id/mode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:padding="15dp"
+                android:backgroundTint="@color/black"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:maxLength="1"
+                android:hint="@string/mode"
+                android:textColorHint="@color/grey" />
 
-    <Button
-        android:id="@+id/send"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="15dp"
-        android:text="@string/send"/>
+            <EditText
+                android:id="@+id/res_ip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:padding="15dp"
+                android:backgroundTint="@color/black"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:maxLength="15"
+                android:hint="@string/res_ip"
+                android:textColorHint="@color/grey" />
+
+            <EditText
+                android:id="@+id/res_port"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:padding="15dp"
+                android:backgroundTint="@color/black"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:maxLength="6"
+                android:hint="@string/res_port"
+                android:textColorHint="@color/grey" />
+
+            <EditText
+                android:id="@+id/phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:padding="15dp"
+                android:backgroundTint="@color/black"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:maxLength="11"
+                android:hint="@string/phone"
+                android:textColorHint="@color/grey" />
+
+            <Button
+                android:id="@+id/send"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="@string/send"/> />
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>
